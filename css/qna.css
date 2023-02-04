@@ -1,0 +1,43 @@
+#qna {
+    display: none;
+  }
+  
+  .qBox {
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 80%;
+    margin : 20px;
+  }
+  
+  .answerList { 
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: block;                 /* 질문 한줄씩*/                     
+    width: 80%;
+    border: 0px;
+    font-size: 19px;
+    margin : 19px;
+  }
+   
+  .answerList:hover, .answerList:focus {  /*질문 버튼 클릭, 포커스 반응*/
+    background-color: #ffc0cb;
+    color: whitesmoke;
+  }
+  .status {
+      width : 80%;
+      height : 15px;
+      background-color: seashell;
+      margin-left: 16px;
+      margin-top: 10px;
+  }
+
+  .statusBar {
+    height : 100%;
+    background-color: springgreen;
+
+  }
+
+
+

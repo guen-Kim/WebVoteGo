@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>투표바로알GO</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/basic.css">
+  <link rel="stylesheet" href="./qna.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/qna.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/result.css">
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    Kakao.init('d72d3de9f3a298664778eb57782a1668');
+    Kakao.isInitialized();
+  </script>
+
+</head>
+
+<body>
+  <header id="header">
+    <img src="img/logo.png" style="max-width: 100%; height: auto;" alt="로고"
+      onclick="javascript:location.href='index.html'">
+  </header>
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html" id="index">소개</a></li>
+      <li><a href="vote.html" class="here">투표바로알GO</a></li>
+      <li><a href="about.html" id="about">연락처</a></li>
+    </ul>
+  </nav>
+  <section id="content">
+    <br>
+    <p id="intro">
+
+    <article id="main">
+      <div>
+        <br>
+        <img src="./img/logo2.png" alt="logoImage" style="display: block; margin: 3em auto;">
+      </div>
+
+      <p>
+        대선 후보의 주요 10개의 공략을 비교해 자신에게 가장 알맞는 후보를 추천해드립니다.<br>
+        아래 시작하기 버튼을 눌러 시작해 주십시오.<br> <strong style="font-size: 16px; color:red">( 현재 데이터 셋은 19대 대선 후보[문재인, 홍준표, 안철수, 유승민, 심상정]의 공약입니다.) </strong>
+      </p>
+      <br>
+
+      <button type="button" class="kakao" style="margin:auto; display:block;" onclick="js:begin()">시작하기</button>
+      <br>
+    </article>
+
+    <!--QnA 페이지 구성 : 진행바, 질문 박스, 답변 박스-->
+    <article id="qna">
+      <!--진행 상태바-->
+      <div class="status">
+        <div class="statusBar"></div>
+      </div>
+      <!--질문 박스-->
+      <div class="qBox"></div>
+      <!--답변 박스-->
+      <div class="answerBox"></div>
+      <button type="button" class="back" onclick="js:goBack()">뒤로가기</button>
+    </article>
+
+    <article id="result">
+      <br>
+      <p><strong>당신에게 추천할 19대 대선후보는...</strong></p>
+      <br><br>
+
+      <div class="resultname"></div>
+
+      <div id="resultImg"></div>
+  
+
+      <p>
+      <button type="button" class="kakao" onclick="js:sendLink1()">결과 및 투표바로알GO 공유하기</button>
+        <br>
+      <button type="button" class="kakao" onclick="js:sendLink2()">투표바로알GO만 공유하기</button>
+      </p>
+      <br>
+    </article>
+
+  </section>
+
+  <script src="./js/data.js" charset="utf-8"></script>
+  <script src="./js/start_test.js" charset="utf-8"></script>
+  <script src="./js/share.js" charset="utf-8"></script>
+
+</body>
+<footer>
+  <p>Copyright&copy; 웹프로그래밍 2분반 김권일</p>
+</footer>
+
+</html>

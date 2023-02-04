@@ -1,0 +1,54 @@
+
+/*서서히 투명도가 달라지는 스타일 속성*/
+@keyframes fadeIn {
+    from { opacity: 0; } /*투명도가 0이라고 display : none이 되는게 아님*/
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; } /*투명도*/
+    to { opacity: 0; }
+}
+
+
+/*서서히 투명도가 달라지는 스타일 속성*/
+/*크롬 전용*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; } 
+    to { opacity: 1; }
+}
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; } 
+    to { opacity: 0; }
+}
+
+@keyframes bomb {
+    from{ font-size :1%;}
+    to {font-size: 200%;}
+}
+
+@-webkit-keyframes bomb {
+    from{ font-size :1%;}
+    to {font-size: 300%;}
+}
+
+@keyframes bomb2 {
+    from{ font-size :0%;}
+    to {font-size: 100%;}
+}
+
+@-webkit-keyframes bomb2 {
+    from{ font-size :0%;}
+    to {font-size: 100%;}
+}
+
+
+/* for 버튼 클릭 애니메이션*/
+.fadeIn{                
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+/* for 버튼 클릭 애니메이션*/
+.fadeOut{
+    animation: fadeOut;
+    animation-duration: 1s;
+}

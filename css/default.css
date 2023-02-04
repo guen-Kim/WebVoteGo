@@ -1,0 +1,32 @@
+body {
+    background-color: #334;
+}
+
+/* 구글 폰트  투표바로 GO*/
+/* * {
+    font-family: 'Nanum Pen Script', cursive;
+
+} */
+
+p{
+    font-size: 22px;
+    margin: 10px;
+}
+
+
+.back {
+    height:50px;
+    color: black;
+    background-color: #FEE500;
+    padding: 10px;
+    font-size : 15px;
+    border: 0px;
+    border-radius: 20px;
+ 
+ }
+ 
+ 
+ .back:hover, .back:focus {  /*질문 버튼 클릭, 포커스 반응*/
+    background-color: pink;
+    color: whitesmoke;
+  }
